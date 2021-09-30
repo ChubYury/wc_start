@@ -1,0 +1,26 @@
+//@import url('../fonts/elegant_font/style.css');
+
+@font-face {
+  font-family: 'ElegantIcons';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/ElegantIcons.woff') format('woff'),
+    url('../fonts/ElegantIcons.svg') format('svg'),
+    url('../fonts/ElegantIcons.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/Raleway-Regular.woff') format('woff'),
+    url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-display: swap;
+  src: url('../../static/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+    url('../../static/fonts/Raleway-ExtraBold.woff') format('woff'),
+    url('../../static/fonts/Raleway-ExtraBold.ttf') format('truetype');
+}

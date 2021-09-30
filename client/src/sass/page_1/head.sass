@@ -1,0 +1,73 @@
+.whead
+  bg: var(--theme-accent-grey)
+  br-b: 2px solid var(--theme-secondary-grey) 
+.head
+  d: flex
+  ai: center
+  jc: space-between
+  pa: 10px
+  pos: relative
+
+.navbar
+  d: none
+  +mq-lg
+    d: block
+    pos: relative
+    right: -4%
+  +mq-xl
+    right: -12%
+  &__
+    &list
+      d: flex
+      ai: center
+      jc: space-between
+    &item
+      ma: 0px 5px
+      pa: 5px 8px
+      br-radius: 5px
+      &:hover
+        bg: var(--theme-primary-green)
+        .navbar__link
+          color: var(--theme-accent-grey)
+    &link
+      fw: 800
+      color: var(--theme-text-1)
+      
+.search
+  pos: relative
+  d: none
+  +mq-sm
+    d: block
+    right: -30%
+  +mq-md
+    right: -35%
+  +mq-lg
+    right: auto
+  &__
+    &field
+      d: none
+    &icon
+      font-family: ElegantIcons
+      fw: 800
+      color: var(--theme-primary-green)
+
+.btn-menu
+  pos: relative
+  w: 20px
+  h: 16px
+  br: none
+  bg: var(--theme-accent-grey)
+  +mq-lg
+    d: none
+  &__
+    &line
+      pos: absolute
+      w: 100%
+      h: 2px
+      bg: var(--theme-primary-green)
+      &--once
+        top: 0%
+      &--two
+        top: 50%
+      &--three
+        top: 100%

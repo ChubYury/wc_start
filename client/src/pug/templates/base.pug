@@ -1,0 +1,47 @@
+include ../mixins/index
+<!DOCTYPE html>
+html(lang='ru')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="theme-color" content="#8F67A4")
+    link(
+      rel="stylesheet",
+      type="text/css",
+      media="all",
+      href='../static/css/style.css'
+    )
+    link(
+      rel="icon",
+      href='../static/img/pngegg.png',
+      type="image/x-icon"
+    )
+
+    
+  body
+    #app
+      block header
+        include ./header
+
+      block contenter
+        main.main
+          include ./page1/baner
+          include ./page1/offer
+          include ./page1/properties
+          include ./page1/properties2
+          include ./page1/skills
+          include ./page1/portfolio
+          include ./page1/companyf
+          include ./page1/question
+          include ./page1/command
+          include ./page1/utterance
+          include ./page1/clients
+          include ./page1/prise
+          include ./page1/question2
+
+      block foot
+        include ./foot
+      
+    script(type="text/javascript", src='/static/js/vendor.js')
+    script(type="text/javascript", src='/static/js/main.js')

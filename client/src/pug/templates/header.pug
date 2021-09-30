@@ -1,0 +1,20 @@
+include ../mixins/index
+
++b.whead.HEADER 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.head
+        +b.logo
+          +e.img.IMG(src="../static/img/logo.png" alt="logo")
+        +b.navbar.NAV 
+          +e.list.UL 
+            each name in ['HOME', 'PORTFOLIO', 'BLOG', 'PAGES', 'FEATURES', 'MEGA MENU', 'CONTACT', 'TWO']
+              +e.item.LI 
+                +e.link.A= name
+        +b.search
+          +e.field.INPUT      
+          +e.icon.icon_search.SPAN &#x55;
+        +b.btn-menu.BUTTON
+          +e.line--once.SPAN
+          +e.line--two.SPAN
+          +e.line--three.SPAN
+          
