@@ -1,36 +1,84 @@
 .w-main
   bg: var(--theme-accent-dark-grey)
+  h: 100vh
+  pa: 20px 0px
 
 .main-b
   d: flex
   f-dir: column
-  jc: center
+  //jc: center
+  ai: flex-start
+  h: 100vh
+  pt: 20vh
   &__
     &title
       fw: 800
       fs: 64px
+      color: var(--theme-relief-5)
     &subtitle
       fw: 500
       fs: 18px
       &--
         &white
           color: var(--theme-relief-1)
-          pa: 0px 5px
+          pa: 6px 10px
+          br-radius: 5px
           bg: var(--theme-relief-6)
           &-mini
             fw: 800
-            //&-color
-    //&decwrap
+            &-color
+              fw: 800
+              color: var(--theme-primary-green)
+    &decwrap
+      d: flex
+      ai: center
+      jc: flex-start
+      w: 65%
+      
+    &description
+      pa: 10px 0px
+      fs: 26px
+      fw: 800
+      color: var(--theme-relief-5)
+      &--color
+        color: var(--theme-primary-green)
     &btn
       td: none
       font-family: ElegantIcons
+      
+.figure
+  pos: relative
+  d: flex
+  ai: center
+  jc: center
+  w: 30%
+  
+  &__
+    &line
+      pos: relative
+      h: 8px
+      br-t: 2px solid var(--theme-accent-white)
+      br-b: 2px solid var(--theme-accent-white)
+      w: 50%
 
-//.figure
-//  &__
-//    &line
-//    &rhombus
-//      &--
-//        &once
-//        &two
-//        &three
-//          background: #000
+
+    &rhombus
+      pos: relative
+      ma: 1px
+      bg: var(--theme-primary-green)
+      &--
+        &once
+          w: 10px
+          h: 10px
+          br-radius:1px
+          opacity: 0.5
+        &two
+          w: 13px
+          h: 13px
+          br-radius:2px
+          opacity: 0.8
+        &three
+          w: 16px
+          h: 16px
+          br-radius:3px
+          
