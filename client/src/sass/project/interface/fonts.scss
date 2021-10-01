@@ -18,6 +18,14 @@
 }
 @font-face {
   font-family: 'Raleway';
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Medium.woff') format('woff'),
+    url('../fonts/Raleway-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
   font-weight: 800;
   font-display: swap;
   src: url('../../static/fonts/Raleway-ExtraBold.woff2') format('woff2'),

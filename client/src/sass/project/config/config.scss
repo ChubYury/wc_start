@@ -10,6 +10,7 @@ $theme-default: (
     red: #DC565B,
     grey: #F9F9F9,
     black: #262626,
+    dark-grey: #8a8a8a,
     purple: #d946db,
   ),
   primary: (
@@ -41,7 +42,7 @@ $theme-base: map-merge($theme-default, (
     3: #bfecff,
     4: #eaeaea,
     5: #d1dbdf,
-    6: #E6E6E6,
+    6: #333333,
   ),
   text: (
     1: #606060,
