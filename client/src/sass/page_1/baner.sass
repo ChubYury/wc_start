@@ -13,12 +13,24 @@
   &__
     &title
       fw: 800
-      fs: 64px
+      fs: 40px
       color: var(--theme-relief-5)
+      +mq-sm
+        fs: 50px
+      +mq-md
+        fs: 64px
     &subtitle
       fw: 500
-      fs: 18px
+      fs: 8px
+      color: var(--theme-relief-5)
+      +mq-sm
+        fs: 14px
+      +mq-md
+        fs: 18px
       &--
+        &top
+          +mq-sm
+            ml: 20%
         &white
           color: var(--theme-relief-1)
           pa: 6px 10px
@@ -26,6 +38,7 @@
           bg: var(--theme-relief-6)
           &-mini
             fw: 800
+            color: var(--theme-relief-1)
             &-color
               fw: 800
               color: var(--theme-primary-green)
@@ -33,52 +46,52 @@
       d: flex
       ai: center
       jc: flex-start
-      w: 65%
-      
+      w: 100%
+      +mq-md
+        w: 85%
+        .figure
+          &__
+            &line
+              h: 8px
+              br-t: 2px solid var(--theme-primary-main)
+              br-b: 2px solid var(--theme-primary-main)
+            &rhombus
+              &--
+                &once
+                  w: 10px
+                  h: 10px
+                  br-radius:1px
+                &two
+                  w: 13px
+                  h: 13px
+                  br-radius:2px
+                &three
+                  w: 16px
+                  h: 16px
+                  br-radius:3px
+      +mq-lg
+        w: 65%
+      +mq-xl
+        w: 54%            
     &description
       pa: 10px 0px
-      fs: 26px
+      fs: 10px
       fw: 800
+      fa: center
       color: var(--theme-relief-5)
+      +mq-sm
+        fs: 16px
+      +mq-md
+        fs: 25px
       &--color
         color: var(--theme-primary-green)
     &btn
-      td: none
+      ma: 30px 0px 0px 40%
       font-family: ElegantIcons
-      
-.figure
-  pos: relative
-  d: flex
-  ai: center
-  jc: center
-  w: 30%
-  
-  &__
-    &line
-      pos: relative
-      h: 8px
-      br-t: 2px solid var(--theme-accent-white)
-      br-b: 2px solid var(--theme-accent-white)
-      w: 50%
-
-
-    &rhombus
-      pos: relative
-      ma: 1px
-      bg: var(--theme-primary-green)
-      &--
-        &once
-          w: 10px
-          h: 10px
-          br-radius:1px
-          opacity: 0.5
-        &two
-          w: 13px
-          h: 13px
-          br-radius:2px
-          opacity: 0.8
-        &three
-          w: 16px
-          h: 16px
-          br-radius:3px
-          
+      td: none
+      fs: 35px
+      color: var(--theme-primary-green)
+      +mq-lg
+        ma: 30px 0px 0px 30%
+      +mq-xl
+        ma: 30px 0px 0px 25%

@@ -3,3 +3,48 @@ body
   fw: 400
   p
     fs: 14px
+
+.figure
+  pos: relative
+  d: flex
+  ai: center
+  jc: center
+  w: 30%
+  &--
+    &left
+      mr: 5px
+      .figure__line
+        mr: 5px
+    &right
+      flex-direction: row-reverse
+      ml: 5px
+      .figure__line
+        ml: 5px
+  &__
+    &line
+      pos: relative
+      h: 5px
+      br-t: 1px solid var(--theme-primary-main)
+      br-b: 1px solid var(--theme-primary-main)
+      w: 100%
+      
+    &rhombus
+      pos: relative
+      bg: var(--theme-primary-green)
+      transform: rotate(45deg)
+      &--
+        &once
+          w: 4px
+          h: 4px
+          br-radius:1px
+          opacity: 0.5
+        &two
+          w: 7px
+          h: 7px
+          br-radius:2px
+          opacity: 0.8
+        &three
+          w: 10px
+          h: 10px
+          br-radius:3px
+          
