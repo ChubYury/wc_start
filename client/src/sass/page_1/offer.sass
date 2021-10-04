@@ -1,0 +1,88 @@
+.offer-b
+  d: flex
+  flex-wrap: wrap
+  ai: center
+  jc: space-around
+  pa: 50px 0px 70px 0px
+  +mq-md
+    pa: 70px 0px 90px 0px
+  
+  .title-3
+    w: 100%
+    jc: center
+    mb: 15px
+  &__
+    &subtitle
+      d: block
+      w: 100%
+      mb: 10px
+      fa: center
+      fw:500
+      fs: 10px
+      color: var(--theme-accent-dark-grey)
+      +mq-sm
+        fs: 13px
+        mb: 50px
+      +mq-lg
+        fs: 16px
+
+.card-1
+  d: flex
+  flex-direction: column
+  ai: center
+  jc: center
+  max-w: 300px
+  mt: 20px
+  &:hover
+    .card-1__icon
+      bg: var(--theme-primary-green)
+      color: var(--theme-text-2)
+    .card-1__btn
+      color: var(--theme-relief-1)
+      bg: var(--theme-primary-green)
+      br: 1px solid var(--theme-primary-green)
+  &__
+    &icon
+      w: 100px
+      h: 100px
+      br-radius: 50%
+      bg: var(--theme-relief-5)
+      font-family: ElegantIcons
+      fw: 800
+      fs: 37px
+      pa:27px 0px 0px 31px
+      color: var(--theme-text-2)
+      transition: 0.5s
+      &--puzzle
+        pa:24px 0px 0px 28px
+    &title
+      ma: 30px 0px 20px 0px
+      fs: 10px
+      fw: 800
+      color: var(--theme-text-1)
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+    &text
+      mb: 20px
+      fs: 12px
+      fw: 500
+      ta: center
+      color: var(--theme-text-1)
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+    &btn
+      pa: 11px
+      br: 1px solid var(--theme-text-2)
+      br-radius: 5px
+      bg: var(--theme-relief-1)
+      fa: center
+      fs: 10px
+      fw: 800
+      color: var(--theme-accent-dark-grey)
+      transition: 0.5s
+      
+    

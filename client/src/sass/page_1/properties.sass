@@ -1,0 +1,111 @@
+.w-properties
+  bg: var(--theme-relief-5)
+
+.properties-b
+  d: flex
+  ai: center
+  jc: center
+  flex-flow: row wrap
+  pos: relative
+  
+  .title-3
+    w: 100%
+    jc: center
+    mb: 15px
+    &__text
+      color: var(--theme-accent-white)
+      &--color
+        color: var(--theme-primary-green)
+
+  .figure
+    w: 12%
+    &__
+      &line
+        d: none
+  
+  &__
+    &subtitle
+      d: block
+      w: 100%
+      mb: 40px
+      fa: center
+      fw: 500
+      fs: 10px
+      color: var(--theme-accent-dark-grey)
+      +mq-sm
+        fs: 13px
+        mb: 50px
+      +mq-lg
+        fs: 16px
+
+.icon
+  pos: relative
+  w: 20px
+  h: 20px
+  top: -10px
+  bg: var(--theme-primary-green)
+  transform: rotate(45deg)
+  &__
+    &pic
+      ma: 2px 0px 0px 4px
+      font-family: ElegantIcons
+      fw: 800
+      fs: 12px
+      color: var(--theme-accent-white)
+      transform: rotate(-45deg)
+
+.info
+  d: flex
+  flex-flow: column
+  w: 100%
+  +mq-sm
+    w: 40%
+   
+.item
+  d: flex
+  flex-flow: wrap
+  w: 100%
+  ma: 0px 10px
+  +mq-sm
+    flex-flow: column wrap
+    h: 90px
+  &__
+    &icon
+      h: 100%
+      mr: 10px
+      &-pic
+        font-family: ElegantIcons
+        fw: 800
+        color: var(--theme-primary-green)
+        +mq-sm
+          fs: 30px
+          h: 90px
+    &title
+      fs: 10px
+      fw: 800
+      color: var(--theme-text-4)
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+    &text
+      w: 100%
+      fs: 12px
+      fw: 500
+      color: var(--theme-text-3)
+      mb: 20px
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+
+.device
+  w: 100%
+  +mq-sm
+    w: 100%
+  +mq-md
+    w: 50%
+    ml: 10%
+  &__
+    &foto
+      w: 100%
