@@ -6,7 +6,6 @@
 .main-b
   d: flex
   f-dir: column
-  //jc: center
   ai: flex-start
   h: 100vh
   pt: 20vh
@@ -42,49 +41,6 @@
             &-color
               fw: 800
               color: var(--theme-primary-green)
-    &decwrap
-      d: flex
-      ai: center
-      jc: flex-start
-      w: 100%
-      +mq-md
-        w: 85%
-        .figure
-          &__
-            &line
-              h: 8px
-              br-t: 2px solid var(--theme-primary-main)
-              br-b: 2px solid var(--theme-primary-main)
-            &rhombus
-              &--
-                &once
-                  w: 10px
-                  h: 10px
-                  br-radius:1px
-                &two
-                  w: 13px
-                  h: 13px
-                  br-radius:2px
-                &three
-                  w: 16px
-                  h: 16px
-                  br-radius:3px
-      +mq-lg
-        w: 65%
-      +mq-xl
-        w: 54%            
-    &description
-      pa: 10px 0px
-      fs: 10px
-      fw: 800
-      fa: center
-      color: var(--theme-relief-5)
-      +mq-sm
-        fs: 16px
-      +mq-md
-        fs: 25px
-      &--color
-        color: var(--theme-primary-green)
     &btn
       ma: 30px 0px 0px 40%
       font-family: ElegantIcons

@@ -10,7 +10,7 @@ $theme-default: (
     red: #DC565B,
     grey: #F9F9F9,
     black: #262626,
-    dark-grey: #8a8a8a,
+    dark-grey: #8a8a8a,//+
     purple: #d946db,
   ),
   primary: (
@@ -18,7 +18,7 @@ $theme-default: (
     inverse: #0f7baa,
     dark: #098ec7,
     red: #D0011B,
-    green: #00a99d,
+    green: #00a99d,//+
     light: #313183,
     text: #dbdbdb,
     text-inverse: rgba(#4A4A4A, 0.3),
@@ -39,14 +39,14 @@ $theme-base: map-merge($theme-default, (
     1: white,
     2: #f0f2f5,
     // 2: #f7f7f7,
-    3: #bfecff,
+    3: #7a7a7a7a,//+
     4: #eaeaea,
-    5: #383838,
-    6: #333333,
+    5: #383838,//+
+    6: #333333,//+
   ),
   text: (
-    1: #606060,
-    2: #a6a6a9,
+    1: #606060,//+
+    2: #e4e4e4,//+
     3: #818181,
     4: #bfbfbf,
     5: #5b5b5b,

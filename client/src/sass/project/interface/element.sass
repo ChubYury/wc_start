@@ -4,6 +4,31 @@ body
   p
     fs: 14px
 
+.title-3
+  d: flex
+  ai: center
+  jc: flex-start
+  w: 100%
+  +mq-md
+    w: 85%
+  +mq-lg
+    w: 65%
+  +mq-xl
+    w: 54%
+  &__
+    &text
+      pa: 10px 0px
+      fs: 10px
+      fw: 800
+      fa: center
+      color: var(--theme-relief-5)
+      +mq-sm
+        fs: 16px
+      +mq-md
+        fs: 25px
+      &--color
+        color: var(--theme-primary-green)
+  
 .figure
   pos: relative
   d: flex
@@ -27,7 +52,11 @@ body
       br-t: 1px solid var(--theme-primary-main)
       br-b: 1px solid var(--theme-primary-main)
       w: 100%
-      
+      +mq-md
+        h: 8px
+        br-t: 2px solid var(--theme-primary-main)
+        br-b: 2px solid var(--theme-primary-main)
+
     &rhombus
       pos: relative
       bg: var(--theme-primary-green)
@@ -35,16 +64,24 @@ body
       &--
         &once
           w: 4px
-          h: 4px
+          h: 3px
           br-radius:1px
           opacity: 0.5
+          +mq-md
+            w: 10px
+            h: 9px
         &two
           w: 7px
-          h: 7px
+          h: 6px
           br-radius:2px
           opacity: 0.8
+          +mq-md
+            w: 13px
+            h: 12px
         &three
           w: 10px
-          h: 10px
+          h: 9px
           br-radius:3px
-          
+          +mq-md
+            w: 16px
+            h: 15px
