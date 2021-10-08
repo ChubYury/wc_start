@@ -3,7 +3,7 @@ body
   fw: 400
   p
     fs: 14px
-
+//************************************
 .title-3
   d: flex
   ai: center
@@ -21,6 +21,7 @@ body
       fs: 10px
       fw: 800
       fa: center
+      ft: uppercase
       color: var(--theme-relief-5)
       +mq-sm
         fs: 16px
@@ -41,7 +42,7 @@ body
       .figure__line
         mr: 5px
     &right
-      flex-direction: row-reverse
+      f-dir: row-reverse
       ml: 5px
       .figure__line
         ml: 5px
@@ -60,28 +61,81 @@ body
     &rhombus
       pos: relative
       bg: var(--theme-primary-green)
-      transform: rotate(45deg)
+      trans: rotate(45deg)
       &--
         &once
-          w: 4px
-          h: 3px
+          w: 5px
+          h: 5px
           br-radius:1px
           opacity: 0.5
           +mq-md
             w: 10px
-            h: 9px
+            h: 10px
         &two
           w: 7px
-          h: 6px
+          h: 7px
           br-radius:2px
           opacity: 0.8
           +mq-md
             w: 13px
-            h: 12px
+            h: 13px
         &three
           w: 10px
-          h: 9px
+          h: 10px
           br-radius:3px
           +mq-md
             w: 16px
-            h: 15px
+            h: 16px
+//*********************************************
+
+.icon
+  pos: relative
+  w: 20px
+  h: 20px
+  top: -10px
+  bg: var(--theme-primary-green)
+  br-radius: 2px
+  trans: rotate(45deg)
+  &__
+    &pic
+      mt: 2px
+      ml: 4px
+      font-family: ElegantIcons
+      fw: 800
+      fs: 12px
+      color: var(--theme-accent-white)
+      trans: rotate(-45deg)
+      +mq-sm
+        mt: 4px
+        ml: 6px
+        fs: 14px
+      +mq-md
+        mt: 6px
+        ml: 10px
+        fs: 16px
+      +mq-lg
+        mt: 7px
+        ml: 12px
+        fs: 18px
+      +mq-xl
+        mt: 9px
+        ml: 16px
+        fs: 20px
+  +mq-sm
+    w: 30px
+    h: 30px
+    top: -15px
+  +mq-md
+    w: 40px
+    h: 40px
+    top: -20px
+    br-radius: 3px
+  +mq-lg
+    w: 50px
+    h: 50px
+    top: -25px
+  +mq-xl
+    w: 54px
+    h: 54px
+    top: -27px
+    br-radius: 5px

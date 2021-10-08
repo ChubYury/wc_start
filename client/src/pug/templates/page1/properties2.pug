@@ -1,1 +1,44 @@
 include ../../mixins/index
+-
+  const items = [{
+            clicon:'icon_desktop', 
+            icon: '&#xe00e;',
+            title: 'responsive & multipurpose',
+            sub: 'Desktops, Tablets & Phones',
+          },
+          {
+            clicon:'icon_puzzle_alt',
+            icon: '&#xe0f9;',
+            title: 'easy customization',
+            sub: 'One Click Demo Content Installation',
+        },
+        {
+          clicon:'icon_star',
+          icon: '&#xe033;',
+          title: 'unlimited features',
+          sub: 'Shortcodes, Typography & Different Layouts',
+        },
+        {
+          clicon:'icon_menu-square_alt',
+          icon: '&#xe056;',
+          title: 'clean & modular coding',
+          sub: '100% Clean, Valid & Well-Commented Coding',
+        },
+        {
+          clicon:'icon_cart',
+          icon: '&#xe07a;',
+          title: 'the best e-commerce solutions',
+          sub: 'WooCommerce Fully Integration',
+        },
+        {
+          clicon:'icon_lifesaver',
+          icon: '&#xe028;',
+          title: 'awesome friendly support',
+          sub: 'Free Lifetime Support & Updates1',
+        },
+      ]
++b.w-properties2
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.properties2-b.UL
+      +createItems(items)
+      

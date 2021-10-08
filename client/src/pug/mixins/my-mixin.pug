@@ -1,0 +1,12 @@
+
+mixin createItems(itemsData = [])
+  each elem in itemsData
+    +b.item1.LI
+      +b.tab
+        +e.bg--once.P(class=elem.clicon)!= elem.icon
+        +e.bg--two
+      +e.title.P= elem.title
+      +e.subtitle.P= elem.sub
+      +e.text.P Proin in magna a ipsum viverra scelerisque 
+              | eu nec turp, Nunc vestibulum fringilla accumsan. 
+              | Praesent arcu turpis.

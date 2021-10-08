@@ -1,0 +1,106 @@
+.w-properties2
+  pa: 20px 0px
+.properties2-b
+  d: flex
+  flex-wrap: wrap
+  ai: center
+  jc: space-between
+  
+.item1
+  ma: 25px 0px
+  bg: var(--theme-accent-white)
+  +mq-sm
+    w: 50%
+  +mq-md
+    w: 50%
+  +mq-lg
+    w: 30%
+  //+mq-xl
+  &:hover
+        
+    .tab__bg--once
+      bg: var(--theme-primary-green)
+      &:after
+        br-t: 15px solid var(--theme-primary-green)
+    .tab__bg--two
+      bg: var(--theme-relief-2)
+      &:after
+        br-t: 15px solid var(--theme-relief-2)
+  &__
+    &title
+      ml: 50px
+      ft: uppercase
+      fs: 10px
+      fw: 800
+      color: var(--theme-text-1)
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+    &subtitle
+      ml: 50px
+      fw: 400
+      fs: 8px
+      color: var(--theme-text-4)
+      +mq-sm
+        fs: 10px
+      +mq-lg
+        fs: 12px
+    &text
+      ml: 50px
+      fw: 400
+      fs: 10px
+      color: var(--theme-text-7)
+      opacity: 1
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+
+.tab
+  pos: relative
+  &__
+    &bg
+      w: 40px
+      h: 40px
+      br-radius: 2px 2px 0px 0px
+      pos: relative
+      &--
+        &once
+          bg: var(--theme-relief-2)
+          pos: absolute
+          z-index: 3
+          pa: 10px 0px 0px 9px
+          font-family: ElegantIcons
+          fw: 800
+          fs: 20px
+          color: var(--theme-accent-white)
+          tr: 0.2s
+          &:after
+            content: " "
+            pos: absolute
+            bottom: -15px
+            left: 0
+            w: 0
+            h: 0
+            br-l: 20px solid transparent
+            br-r: 20px solid transparent
+            br-t: 15px solid var(--theme-relief-2)
+            tr: 0.2s
+        &two
+          bg: var(--theme-primary-green)
+          pos: absolute
+          z-index: 2
+          top: 15px
+          tr: 0.2s
+          &:after
+            content: " "
+            pos: absolute
+            bottom: -15px
+            left: 0
+            w: 0
+            h: 0
+            br-l: 20px solid transparent
+            br-r: 20px solid transparent
+            br-t: 15px solid var(--theme-primary-green)
+            tr: 0.2s
