@@ -38,21 +38,6 @@
       +mq-lg
         fs: 16px
 
-.icon
-  pos: relative
-  w: 20px
-  h: 20px
-  top: -10px
-  bg: var(--theme-primary-green)
-  transform: rotate(45deg)
-  &__
-    &pic
-      ma: 2px 0px 0px 4px
-      font-family: ElegantIcons
-      fw: 800
-      fs: 12px
-      color: var(--theme-accent-white)
-      transform: rotate(-45deg)
 
 .info
   d: flex
@@ -90,10 +75,10 @@
         fs: 14px
     &text
       w: 100%
-      fs: 12px
-      fw: 500
-      color: var(--theme-text-3)
       mb: 20px
+      fs: 12px
+      fw: 400
+      color: var(--theme-text-3)
       +mq-sm
         fs: 12px
       +mq-lg
@@ -101,11 +86,17 @@
 
 .device
   w: 100%
+  pos: relative
+  bottom: -6px
   +mq-sm
     w: 100%
+    bottom: -6px
   +mq-md
     w: 50%
     ml: 10%
+    bottom: -22px
+  +mq-lg
+    bottom: -6px
   &__
     &foto
       w: 100%
