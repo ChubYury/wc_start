@@ -1,0 +1,14 @@
+mixin createFact(fData = [])
+  each x in fData
+    +b.item-f
+      +e.stat
+        +e.stat-figure
+        +e.stat-number.P= x.num
+        +e.stat-figure
+      +e.icon
+        +e.icon-line
+        +e.icon-pic.P(class=x.clicon2)!= x.icon2
+        +e.icon-line
+      +e.description.P= x.desc+' '
+        if x.num == '360'
+          +e.description-min.SPAN /month

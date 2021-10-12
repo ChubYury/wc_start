@@ -7,7 +7,7 @@
   jc: center
   flex-flow: row wrap
   pos: relative
-  
+
   .icon
     &__
       &pic
@@ -63,3 +63,84 @@
         mb: 50px
       +mq-lg
         fs: 16px
+
+.prog-bar
+  pos: relative
+  d: flex
+  flex-direction: column
+  ai: center
+  jc: space-between
+  w: 40% 
+  pa: 0px 5px
+  +mq-sm
+    w: 40%
+  +mq-md
+    w: 30%
+  +mq-lg
+    w: 30%
+  +mq-xl
+    w: 15%
+  &__
+    &percent
+      pos: absolute
+      w: 100%
+      top: 27%
+      fa: center
+      &-
+        &strong
+          pos: relative
+          fw: 800
+          fs: 20px
+          color: var(--theme-accent-white)
+          +mq-sm
+            fs: 24px
+          +mq-md
+            fs: 26px
+          +mq-lg
+            fs: 28px
+          +mq-xl
+            fs: 30px
+        &min
+          pos: relative
+          fw: 500
+          fs: 12px
+          color: var(--theme-accent-white)
+          +mq-sm
+            fs: 14px
+          +mq-md
+            fs: 16px
+          +mq-lg
+            fs: 18px
+          +mq-xl
+            fs: 20px
+    &name
+      ma: 20px 0px
+      fw: 800
+      fs: 10px
+      ft: uppercase
+      color: var(--theme-text-4)
+      +mq-sm
+        fs: 12px
+      +mq-lg
+        fs: 14px
+      
+.chart
+  w: 120px 
+  h: 120px
+  +mq-sm
+    w: 120px 
+    h: 120px
+  +mq-md
+    w: 130px 
+    h: 130px
+  +mq-lg
+    w: 140px 
+    h: 140px
+  +mq-xl
+    w: 150px 
+    h: 150px
+  &__
+    &circle
+      animation: circle-chart-fill 2s reverse
+      transform: rotate(180deg)
+      transform-origin: center
