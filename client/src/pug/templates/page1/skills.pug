@@ -1,4 +1,31 @@
 include ../../mixins/index
+-
+  const progData = [
+        {
+          percent:'75', 
+          name: 'web design',
+        },
+        {
+          percent:'92',
+          name: 'web development',
+        },
+        {
+          percent:'68',
+          name: 'speed optimization',
+        },
+        {
+          percent:'100',
+          name: 'customer support',
+        },
+        {
+          percent:'83',
+          name: 'marketing',
+        },
+        {
+          percent:'50',
+          name: 'advertisement',
+        },
+      ]
 
 +b.w-skills.SECTION
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
@@ -20,3 +47,5 @@ include ../../mixins/index
       +e.subtitle.P With unlimited features that we offer, 
                   | we promise it’s possible to make everything 
                   | that was impossible for you !
+
+      +createProgress(progData)

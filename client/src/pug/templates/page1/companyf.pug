@@ -1,1 +1,50 @@
 include ../../mixins/index
+
+-
+  const fact = [
+        {
+          clicon2:'icon_box-checked',
+          num: '218', 
+          icon2: '&#x5a',
+          desc: 'completed projects',
+        },
+        {
+          clicon2:'icon_hourglass',
+          num: '360',
+          icon2: '&#xe0e1;',
+          desc: 'hours of work',
+        },
+        {
+          clicon2:'icon_tags',
+          num: '135',
+          icon2: '&#xe07c;',
+          desc: 'solved tickets',
+        },
+        {
+          clicon2:'icon_like_alt',
+          num: '174',
+          icon2: '&#xe0dd;',
+          desc: 'satisfied clients',
+        },
+      ]
+
++b.w-companyf.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.companyf-b
+      +b.icon
+        +e.pic.icon_toolbox.P &#xe085;
+      +b.title-3
+        +b.figure--left
+          +e.line
+          +e.rhombus--once
+          +e.rhombus--two
+          +e.rhombus--three
+        +e.text.P company #[+e.text--color facts]
+        +b.figure--right
+          +e.line
+          +e.rhombus--once
+          +e.rhombus--two
+          +e.rhombus--three2
+      +e.subtitle.P We do love to work and increase our counter numbers, 
+                  | this is what we’ve done till now
+      +createFact(fact)
