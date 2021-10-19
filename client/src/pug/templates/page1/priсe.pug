@@ -1,0 +1,76 @@
+include ../../mixins/index
+
+-
+  const priceData = [
+        {
+          namePlan: 'standard plan',
+          banknote:'$', 
+          coins: '19',
+          penny: '99',
+          monty: 'Monthly',
+          bullet: 'false',
+          offer1: '5 Projects',
+          offer2: '5 GB Storage',
+          offer3: 'Unlimited Users',
+          offer4: '10 GB Bandwith',
+          offer5: 'Enhanced Security',
+        },
+        {
+          namePlan: 'premium plan',
+          banknote:'$', 
+          coins: '29',
+          penny: '99',
+          monty: 'Monthly',
+          bullet: 'false',
+          offer1: '10 Projects',
+          offer2: '15 GB Storage',
+          offer3: 'Unlimited Users',
+          offer4: '20 GB Bandwith',
+          offer5: 'Enhanced Security',
+        },
+        {
+          namePlan: 'advanced plan',
+          banknote:'$', 
+          coins: '49',
+          penny: '99',
+          monty: 'Monthly',
+          bullet: 'true',
+          offer1: '15 Projects',
+          offer2: '30GB Storage',
+          offer3: 'Unlimited Users',
+          offer4: '50 GB Bandwith',
+          offer5: 'Enhanced Security',
+        },
+        {
+          namePlan: 'ultimate plan',
+          banknote:'$', 
+          coins: '99',
+          penny: '99',
+          monty: 'Monthly',
+          bullet: 'false',
+          offer1: 'Unlimited Projects',
+          offer2: 'Unlimited Storage',
+          offer3: 'Unlimited Users',
+          offer4: 'Unlimite Bandwith',
+          offer5: 'Enhanced Security',
+        },
+      ]
+
++b.w-prices
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.prices-b
+      +b.title-3
+        +b.figure--left
+          +e.line
+          +e.rhombus--once
+          +e.rhombus--two
+          +e.rhombus--three
+        +e.text.P real cheap #[+e.text--color prices]
+        +b.figure--right
+          +e.line
+          +e.rhombus--once
+          +e.rhombus--two
+          +e.rhombus--three
+      +e.subtitle.P Let’s take a look at some of the best of our works here, we love them and hope you too
+      +createPrice(priceData)
+      

@@ -8,7 +8,7 @@ $theme-default: (
     blue: #4094EF,
     dark-blue: #133768,
     red: #DC565B,
-    grey: #F9F9F9,
+    grey: #F9F9F9,//+
     black: #262626,
     dark-grey: #8a8a8a,//+
     purple: #d946db,
@@ -24,7 +24,7 @@ $theme-default: (
     text-inverse: rgba(#4A4A4A, 0.3),
   ),
   secondary: (
-    main: #BADC7D,
+    main: #cccccc,//+
     grey: #dedede,
     dark: rgba(214, 245, 252, 0.5),
     base: rgb(7, 6, 8),

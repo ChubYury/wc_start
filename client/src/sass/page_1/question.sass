@@ -1,0 +1,50 @@
+.w-question
+  bg: var(--theme-primary-green)
+.question-b
+  d: flex
+  ai: center
+  jc: center
+  flex-wrap: wrap
+  pos: relative
+  w: 100%
+  pa: 20px 0px
+  color: var(--theme-text-2)
+  +mq-sm
+    jc: space-between
+  &__
+    &title
+      w: 100%
+      mb: 10px
+      fw: 800
+      fs: 10px
+      fa: center
+      ft: uppercase
+      +mq-sm
+        w: 40%
+      +mq-md
+        w: 55%
+        fs: 12px
+      +mq-lg
+        fs: 14px
+      +mq-xl
+        fs: 16px
+    &btn
+      ma: 0px
+      pa: 12px 11px
+      bg: var(--theme-text-2)
+      br: none
+      color: var(--theme-text-1)
+      fw: 800
+      fs: 11px
+      +mq-sm
+        pa: 14px 13px
+        fs: 13px
+      +mq-lg
+        pa: 16px 15px
+      &:hover
+        br: none
+        bg: var(--theme-text-1)
+        color: var(--theme-text-2)
+        box-shadow: 4px 4px 8px 0px rgba(96, 96, 96, 0.2)
+      &:active
+        box-shadow: none

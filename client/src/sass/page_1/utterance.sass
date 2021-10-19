@@ -1,0 +1,99 @@
+.w-utterance
+  bg: var(--theme-primary-green)
+.utterance-b
+  d: flex
+  f-dir: column
+  ai: center
+  jc: center
+  pb: 100px
+  min-w: 0
+  
+  .icon
+    bg: var(--theme-relief-5)
+    &__
+      &pic
+        pt: 4px
+        pl: 0px
+        fs: 15px
+        color: var(--theme-accent-white)
+        trans: rotate(135deg)
+        +mq-sm
+          pt: 10px
+          pl: 0px
+          fs: 20px
+        +mq-md
+          pt: 25px
+          pl: 2px
+          fs: 20px
+        +mq-lg
+          pt: 30px
+          pl: 0px
+          fs: 27px
+        +mq-xl
+          pt: 30px
+          pl: 0px
+          fs: 28px
+
+  .control
+    top: 100%
+    bg: var(--theme-accent-white)
+    color: var(--theme-primary-green)
+    &:hover
+      bg: var(--theme-relief-5)
+      color: var(--theme-accent-white)
+      box-shadow: 0px 4px 4px rgba(255,255, 255, 0.25)
+    &--prev
+      left: 40%
+      +mq-sm
+        left: 45%
+      +mq-md
+        left: 47%
+    &--next
+      right: 40%
+      +mq-sm
+        right: 45%
+      +mq-md
+        right: 47%
+        
+.cit-slider
+  pos: relative
+  w: 100%
+.quotes-item
+  
+  mt: 30px 
+  fa: center
+  &__
+    &user
+      pa: 15px 15px 12px 15px
+      br-radius: 3px
+      bg: var(--theme-text-2)
+      fw: 400
+      fs: 8px
+      fa: center
+      +mq-md
+        fs: 10px
+      +mq-xl
+        fs: 12px
+      &-
+        &autor
+          fw: 800
+          ft: uppercase
+          color: var(--theme-primary-green)
+        &spec
+          color: var(--theme-text-4)
+    &text
+      ma: 30px 0px 30px 0px
+      fw: 500
+      fs: 11px
+      fa: center
+      color: var(--theme-text-2)
+      +mq-sm
+        fs: 14px
+      +mq-md
+        fs: 16px
+      +mq-lg
+        fs: 18px
+      +mq-xl
+        fs: 20px
+
+  

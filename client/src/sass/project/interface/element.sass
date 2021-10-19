@@ -55,8 +55,8 @@ body
       w: 100%
       +mq-md
         h: 8px
-        br-t: 2px solid var(--theme-primary-main)
-        br-b: 2px solid var(--theme-primary-main)
+        br-t: 1px solid var(--theme-primary-main)
+        br-b: 1px solid var(--theme-primary-main)
 
     &rhombus
       pos: relative
@@ -98,6 +98,7 @@ body
   trans: rotate(45deg)
   &__
     &pic
+      pos: relative
       mt: 2px
       ml: 4px
       font-family: ElegantIcons
@@ -142,20 +143,97 @@ body
 
 //*************************************
 
+.icon-2
+  d: flex
+  ai: center
+  jc: center
+  pos: relative
+  mb: 40px
+  &__
+    &bg
+      pos: relative
+      w: 40px
+      h: 40px
+      bg: var(--theme-accent-dark-grey)
+      br-radius: 3px
+      trans: rotate(45deg)
+      tr: 0.5s
+    &pic
+      mt: 6px
+      ml: 10px
+      font-family: ElegantIcons
+      fw: 800
+      fs: 16px
+      color: var(--theme-accent-dark-grey)
+      trans: rotate(-45deg)
+
+//*************************************
+
 .btn
-  //ma: 2px
-  pa: 16px 5px 15px 5px
+  box-sizing: border-box
+  pa: 16px 15px 15px 15px
   bg: var(--theme-primary-green)
   color: var(--theme-accent-white)
-  br: none
+  br: 1px solid var(--theme-primary-green)
   br-radius: 5px
   fw: 500
   fs: 13px
   ft: uppercase
+  tr: 0.5s
   &:hover
     bg: var(--theme-accent-white)
-    br: 2px solid var(--theme-primary-green)
     color: var(--theme-primary-green)
     box-shadow: 4px 4px 8px 0px rgba(0, 169, 157, 0.2)
   &:active
     box-shadow: none
+    
+//***********slider style*********************
+
+.slick-track
+  d: flex
+
+.slick-list
+  overflow: hidden
+
+.wrap
+  pa: 0px 2px
+
+.control
+  pos: absolute
+  w: 18px
+  h: 18px
+  pa: 0px
+  top: -20%
+  right: 0px
+  br: none
+  br-radius: 2px
+  bg: var(--theme-primary-green)
+  font-family: ElegantIcons
+  fw: 800
+  fs: 13px
+  color: var(--theme-accent-white)
+  tr: 0.5s
+  +mq-sm
+    top: -33%
+  +mq-md
+    w: 20px
+    h: 20px
+    top: -31%
+    fs: 15px
+  +mq-lg
+    w: 25px
+    h: 25px
+    top: -32%
+    fs: 20px
+  +mq-xl
+    w: 30px
+    h: 30px
+    fs: 25px
+    top: -33%
+  &:hover
+    bg: var(--theme-relief-5)
+    box-shadow: 0px 4px 4px rgba(255,255, 255, 0.25)
+  &--prev
+    left: 10px
+  &--next
+    right: 10px

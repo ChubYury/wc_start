@@ -1,8 +1,8 @@
 include ../mixins/index
 
-+b.whead.HEADER 
++b.w-head.HEADER(id='head')
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
-    +b.head
+    +b.head-b
         +b.logo
           +e.img.IMG(src="../static/img/logo.png" alt="logo")
         +b.navbar.NAV 
@@ -13,7 +13,7 @@ include ../mixins/index
         +b.search
           +e.field.INPUT      
           +e.icon.icon_search.SPAN &#x55;
-        +b.btn-menu.BUTTON
+        +b.btn-menu.BUTTON(id='js-menu-trigger')
           +e.line--once.SPAN
           +e.line--two.SPAN
           +e.line--three.SPAN

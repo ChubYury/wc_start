@@ -1,0 +1,161 @@
+.prices-b
+  d: flex
+  flex-wrap: wrap
+  ai: center
+  jc: center
+  pa: 50px 0px 50px 0px
+  +mq-md
+    pa: 70px 0px 70px 0px
+  
+  &__
+    &subtitle
+      d: block
+      w: 100%
+      mb: 10px
+      fa: center
+      fw:500
+      fs: 10px
+      color: var(--theme-accent-dark-grey)
+      +mq-sm
+        fs: 13px
+        mb: 50px
+      +mq-lg
+        fs: 16px
+
+.price-card
+  d: flex
+  f-dir: column
+  ai: center
+  jc: center
+  pos: relative
+  ma: 20px 5px
+  pa: 0px 21px  26px 21px
+  br: 1px solid var(--theme-secondary-grey)
+  br-radius: 5px
+  +mq-sm
+    w: 45%
+  +mq-lg
+    w: 23%
+  +mq-xl
+    w: 24%
+  &:hover
+    .price-card__name
+      bg: var(--theme-primary-green)
+  &__
+    &name
+      pos: relative
+      pa: 15px 15px
+      top: -20px
+      br-radius: 5px
+      bg: var(--theme-relief-5)
+      color: var(--theme-text-2)
+      fw: 800
+      fs: 9px
+      ft: uppercase
+      tr: 0.5s
+      +mq-md
+        fs: 11px
+      +mq-xl
+        fs: 13px
+      &-
+        &star
+          font-family: ElegantIcons
+          fw: 800
+          color: var(--theme-text-2)
+    &calk
+      &-
+        &dolar
+          pr: 3px
+          fw: 500
+          fs: 10px
+          color: var(--theme-accent-dark-grey)
+          +mq-sm
+            fs: 12px
+          +mq-md
+            fs: 14px
+          +mq-lg
+            fs: 13px
+          +mq-xl
+            fs: 16px
+        &number
+          fw: 800
+          fs: 30px
+          color: var(--theme-relief-5)
+          +mq-md
+            fs: 40px
+          +mq-lg
+            fs: 50px
+          +mq-xl
+            fs: 60px
+        &penny
+          pos: relative
+          top: -20px
+          fw: 800
+          fs: 10px
+          color: var(--theme-relief-5)
+          +mq-sm
+            top: -25px
+            fs: 12px
+          +mq-md
+            top: -30px
+            fs: 14px
+          +mq-lg
+            top: -33px
+            fs: 13px
+          +mq-xl
+            top: -35px
+            fs: 16px
+        &romb
+          d: inline-block
+          pos: relative
+          w: 12px
+          h: 12px
+          left: -10px
+          br-radius: 3px
+          bg: var(--theme-relief-5)
+          trans: rotate(45deg)
+          +mq-sm
+            left: -11px
+          +mq-md
+            left: -13px
+          +mq-lg
+            left: -15px
+        &month
+          fw: 500
+          fs: 10px
+          color: var(--theme-accent-dark-grey)
+          +mq-md
+            fs: 11px
+          +mq-xl
+            fs: 12px
+    &offer
+      d: flex
+      f-dir: column
+      ai: center
+      jc: center
+      ma: 25px 0px
+      pa: 20px 25px 20px 30px
+      br-t: 1px solid var(--theme-secondary-grey)
+      br-b: 1px solid var(--theme-secondary-grey)
+      color: var(--theme-accent-dark-grey)
+      &-
+        &text
+          pa: 5px 0px
+          fw: 500
+          fs: 10px
+          color: var(--theme-accent-dark-grey)
+          +mq-sm
+            fs: 11px
+          +mq-md
+            fs: 12px
+          +mq-lg
+            fs: 13px
+          +mq-xl
+            fs: 14px
+    &btn
+      fw: 800
+      fs: 10px
+      +mq-md
+        fs: 11px
+      +mq-xl
+        fs: 13px

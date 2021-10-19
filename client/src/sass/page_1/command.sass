@@ -1,0 +1,113 @@
+
+.command-b
+  d: flex
+  flex-wrap: wrap
+  ai: center
+  jc: center
+  pa: 50px 0px 50px 0px
+  +mq-md
+    pa: 70px 0px 70px 0px
+  .title-3
+    w: 80%
+    jc: center
+    mb: 15px
+    +mq-sm
+      w: 100%
+  &__
+    &subtitle
+      d: block
+      w: 100%
+      mb: 10px
+      fa: center
+      fw:500
+      fs: 10px
+      color: var(--theme-accent-dark-grey)
+      +mq-sm
+        fs: 13px
+        mb: 50px
+      +mq-lg
+        fs: 16px
+
+.dev-slider
+  
+  min-w: 0px
+  pos: relative
+
+
+
+.slide
+  d: flex
+  ai: center
+  jc: center
+  f-dir: column
+  pos: relative
+  ma: 0px auto
+  br: 1px solid var(--theme-secondary-grey)
+  max-w: 300px
+  .icon-2
+    top: 50%
+
+  &:hover
+
+    .icon-2
+      &__
+        &bg
+          bg: var(--theme-accent-white)
+          &:hover
+            bg: var(--theme-text-5)
+            z-index: 10
+
+            .icon-2__pic
+              color: var(--theme-text-2)
+        &pic
+          color: var(--theme-primary-green)
+
+    .slide
+      &__
+        &foto
+          bg: var(--theme-primary-green)    
+        &btn
+          br: 1px solid var(--theme-relief-5)
+          bg: var(--theme-relief-5)
+          color: var(--theme-text-2)
+          box-shadow: 4px 4px 8px 0px rgba(96, 96, 96, 0.2)
+          &:active
+            box-shadow: none
+        &emaile
+          color: var(--theme-primary-green)
+  &__
+    &foto
+      w: 100%
+      h: 270px
+      bg: var(--theme-accent-dark-grey)
+      tr: 0.2s
+    &btn
+      pos: relative
+      top: -24px
+      ma: 0px
+      fw: 800
+      fs: 13px
+      bg: var(--theme-primary-green)
+      color: var(--theme-text-2)
+    &spec
+      fw: 500
+      fs: 12px
+      color: var(--theme-text-1)
+    &emaile
+      fd: none
+      fs: 12px
+      color: var(--theme-text-4)
+      &-
+        &icon
+          font-family: ElegantIcons
+          fw: 800
+          fs: 12px
+    &phone
+      fd: none
+      fs: 12px
+      color: var(--theme-text-4)
+      &-
+        &icon
+          font-family: ElegantIcons
+          fw: 800
+          fs: 12px

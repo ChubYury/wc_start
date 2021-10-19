@@ -1,0 +1,44 @@
+.w-social
+  bg: var(--theme-relief-5)
+.social-b
+  d: flex
+  ai: center
+  jc: center
+  f-dir: column
+  pa: 50px 0px 50px 0px
+  +mq-md
+    pa: 70px 0px 70px 0px
+  &__
+    &logo
+      &-
+        &imge
+          w: 100%
+          h: 100%
+    &items
+      d: flex
+      ai: center
+      jc: center
+      flex-wrap: wrap
+      mt: 60px
+      mb: 70px
+      +mq-md
+        mt: 30px
+        mb: 70px
+    &item
+      &-
+        &icon
+          w: 44px
+          h: 40px
+          ma: 5px 10px
+          pt: 10px
+          br-radius: 5px
+          br: 1px solid var(--theme-text-1)
+          font-family: ElegantIcons
+          fw: 800
+          fs: 16px
+          fa: center
+          color: var(--theme-text-2)
+          tr: 0.5s
+          &:hover
+            br: 1px solid var(--theme-primary-green)
+            bg: var(--theme-primary-green)
