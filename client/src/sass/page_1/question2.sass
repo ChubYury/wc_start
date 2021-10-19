@@ -1,0 +1,53 @@
+.w-question2
+  bg: var(--theme-accent-dark-grey)
+.question2-b
+  d: flex
+  ai: center
+  jc: center
+  flex-wrap: wrap
+  pos: relative
+  w: 100%
+  pa: 20px 0px
+  color: var(--theme-text-5)
+  +mq-sm
+    jc: space-between
+  &__
+    &title
+      w: 100%
+      mb: 10px
+      fw: 800
+      fs: 20px
+      fa: center
+      ft: uppercase
+      +mq-sm
+        w: 40%
+      +mq-md
+        w: 55%
+        fs: 22px
+      +mq-lg
+        fs: 24px
+      +mq-xl
+        fs: 26px
+      &-
+        &big
+          ft: uppercase
+        &text
+          ft: capitalize
+        &icon
+          font-family: ElegantIcons
+          fw: 800
+          color: var(--theme-primary-green)
+    &btn
+      ma: 10px
+      br: none
+      fw: 800
+      &:hover
+       .question2-b__btn-icon
+          color: var(--theme-primary-green)
+      &-
+        &icon
+          font-family: ElegantIcons
+          fw: 800
+          color: var(--theme-accent-white)
+          tr: 0.5s
+          

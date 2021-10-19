@@ -1,0 +1,17 @@
+mixin createUnit(unData = [])
+  each z in unData
+    +b.wrap
+      +b.slide
+        +e.foto
+          +e.foto-imge
+          +b.icon-2
+            each cl in icData
+              +e.bg.A
+                +e.pic.P(class=cl.iclass)!= cl.ikey
+        +b.btn.slide__btn.P= z.unit
+        +e.spec.P= z.spec
+        +e.emaile.A(href="mailto:"+z.email) #[+e.emaile-icon.icon_mail.SPAN &#xe076;] #[+e.SPAN= z.email]
+        +b.BR
+        +e.phone.A(href="tel:"+z.telf) #[+e.phone-icon.icon_phone.SPAN &#xe090;] #[+e.SPAN= z.telf]
+
+        

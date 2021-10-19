@@ -1,1 +1,19 @@
 include ../mixins/index
+
+
++b.w-foot.FOOTER 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.foot-b
+      +b.icon
+        +e.pic.arrow_triangle-up.P &#x42;
+      +b.form.js-form-ajax.FORM(data-action="https://httpbin.org/post" data-method="POST" id="js-form-ajax")
+        +b.hidden-info.INPUT(name="hidden-info" type="hidden" value="test value")
+        +e.item-wrap
+          +e.item-inp.dim.INPUT(name="name" type="text" data-rule="required|name" placeholder="Name")
+        +e.item-wrap
+          +e.item-inp.dim.INPUT(name="email" type="email" data-rule="required|email" placeholder="Email Address")
+        +e.item-wrap
+          +e.item-inp--note.TEXTAREA(name="note" type="text" wrap="hard" data-rule="required|note" placeholder="Message...")
+        +b.btn.form__btn.BUTTON(type="submit") submit message
+      +e.text.P Copyright © 2014 Startuprr, All Rights Reserved.
+      

@@ -1,0 +1,7 @@
+mixin qcard(quotesData = [])
+  each q in quotesData
+    +b.quotes-item
+      +e.user.SPAN
+        +e.user-autor.SPAN= q.unitq
+        +e.user-spec.SPAN= ' - ' + q.specq
+      +e.text.P=  '"' + q.quotes + '"'

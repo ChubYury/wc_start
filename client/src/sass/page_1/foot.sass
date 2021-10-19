@@ -1,0 +1,96 @@
+.w-foot
+  bg: var(--theme-relief-6)
+//.foot-b
+.foot-b
+  d: flex
+  f-dir: column
+  ai: center
+  pos: relative
+  &__
+    &text
+      ma: 20px 0px
+      fw: 800
+      fs: 10px
+      color: var(--theme-secondary-main)
+      +mq-sm
+        fs: 12px
+      +mq-md
+        fs: 13px
+      +mq-lg
+        fs: 14px
+        
+.form
+  d: flex
+  f-dir: column
+  ai: center
+  pos: relative
+  w: 310px
+  ma: 30px 0px
+  pa: 19px
+  br-radius: 5px
+  bg: var(--theme-accent-grey)
+  +mq-sm
+    w: 368px
+    pos: absolute
+    bottom: 80px
+    left: 10px
+  +mq-md
+    bottom: 100px
+  &__
+    &item
+      &-
+        &wrap
+          pos: relative
+          w: 100%
+        &inp
+          w: 100%
+          h: 51px
+          ma: 10px 0px
+          pa: 10px
+          br-radius: 5px
+          br: 1px solid var(--theme-secondary-grey)
+          &::placeholder
+            d: block !important
+            pl: 5px
+            fw: 400
+            fs: 13px
+            line-height: 15px
+            color: var(--theme-color-base)
+          &--
+            &note
+              h: 193px
+              resize: none
+              
+    &btn
+      w: 100%
+      fw: 800
+      fs: 11px
+      +mq-sm
+        fs: 11px
+      +mq-md
+        fs: 12px
+      +mq-lg
+        fs: 13px
+
+[data-type='validator-error']
+  fs: 11px
+  pos: absolute
+  z-index: 10
+  mt: 2px
+  color: var(--theme-text-2)
+  bg: var(--theme-primary-green)
+  box-shadow: 0px 6px 2px -2px rgba(0, 169, 157, 47%)
+  pa: 4px 10px
+  br-radius: 1px
+  pointer-events: none
+  &::before
+    content: ''
+    w: 0
+    h: 0
+    top: -5px
+    pos: absolute
+    left: 6px
+    br-l: 5px solid rgba(0, 0, 0, 0)
+    br-r: 5px solid rgba(0, 0, 0, 0)
+    br-b: 5px solid var(--theme-primary-green)
+

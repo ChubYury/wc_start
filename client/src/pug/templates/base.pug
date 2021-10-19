@@ -22,11 +22,11 @@ html(lang='ru')
   body
     #app
       block header
-        include ./header
+        include ./page1/baner
 
       block contenter
         main.main
-          include ./page1/baner
+          include ./header
           include ./page1/offer
           include ./page1/properties
           include ./page1/properties2
@@ -37,11 +37,13 @@ html(lang='ru')
           include ./page1/command
           include ./page1/utterance
           include ./page1/clients
-          include ./page1/prise
+          include ./page1/priсe
           include ./page1/question2
+          include ./page1/social
+          include ./page1/map
 
       block foot
         include ./foot
-      
     script(type="text/javascript", src='/static/js/vendor.js')
     script(type="text/javascript", src='/static/js/main.js')
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqlb7J9FCMzqTHSUCF7crqqBF1MT-7jqI&callback=initMap&libraries=&v=weekly" async)

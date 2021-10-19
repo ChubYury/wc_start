@@ -1,7 +1,10 @@
-.whead
+.w-head
   bg: var(--theme-accent-grey)
   br-b: 2px solid var(--theme-secondary-grey) 
-.head
+  position: sticky
+  top: 0
+  z-index: 10
+.head-b
   d: flex
   ai: center
   jc: space-between
@@ -16,6 +19,29 @@
     right: -4%
   +mq-xl
     right: -12%
+
+  &.is-active
+    d: block
+    pos: fixed
+    overflow: auto
+    w: 100%
+    h: 100vh
+    bg: var(--theme-accent-grey)
+    top: 0px
+    right: 0px
+    z-index: 15
+    .navbar
+      &__
+        &list
+          f-dir: column
+          ai: center
+        &item
+          //w: 100%
+          ma: 5px 0px
+          pa: 10px
+          &:hover
+            bg: var(--theme-primary-green)           
+
   &__
     &list
       d: flex
@@ -36,7 +62,9 @@
       
 .search
   pos: relative
+  top: 5px
   d: none
+  z-index: 12
   +mq-sm
     d: block
     right: -30%
@@ -58,6 +86,7 @@
   h: 16px
   br: none
   bg: var(--theme-accent-grey)
+  z-index: 15
   +mq-lg
     d: none
   &__
@@ -68,7 +97,24 @@
       bg: var(--theme-primary-green)
       &--once
         top: 0%
+        transition-duration: 0.5s
+        transform-origin: 0% 0%
       &--two
         top: 50%
       &--three
         top: 100%
+        transition-duration: 0.5s
+        transform-origin: 0% 100%
+.is-active
+  .btn-menu
+    bg: var(--theme-accent-grey)
+    &__
+      &line
+        w: 83%
+        &--
+          &once
+            transform: skewY(45deg)
+          &two
+            transform: rotateY(90deg)
+          &three
+            transform: skewY(-45deg)

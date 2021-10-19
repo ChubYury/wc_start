@@ -1,0 +1,24 @@
+mixin createPrice(Data = [])
+  each priceD in Data
+    +b.price-card
+      +e.name.P
+        if priceD.bullet == 'true'
+          +e.name-star.icon_star &#xe033;
+          +e.SPAN= ' '+priceD.namePlan+' '
+          +e.name-star.icon_star &#xe033;
+        else
+          +e.SPAN= priceD.namePlan
+
+      +e.calk.P 
+        +e.calk-dolar.SPAN= priceD.banknote
+        +e.calk-number.SPAN= priceD.coins
+        +e.calk-penny.SPAN= priceD.penny
+        +e.calk-romb
+        +e.calk-month.SPAN= priceD.monty
+      +e.offer
+        +e.offer-text.P= priceD.offer1
+        +e.offer-text.P= priceD.offer2
+        +e.offer-text.P= priceD.offer3
+        +e.offer-text.P= priceD.offer4
+        +e.offer-text.P= priceD.offer5
+      +b.btn.price-card__btn sign up now
