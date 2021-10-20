@@ -1,0 +1,20 @@
+mixin globalTitle(blockData = [])
+  +b.title-3
+    +b.figure--left
+      +e.line
+      +e.rhombus--once
+      +e.rhombus--two
+      +e.rhombus--three
+    if blockData.pos == 'left'
+      +e.text.P
+        +e.text--color.SPAN= blockData.colorTitle +' '
+        +e.SPAN=  blockData.title
+    else
+      +e.text.P= blockData.title +' '
+        +e.text--color.SPAN= blockData.colorTitle
+    +b.figure--right
+      +e.line
+      +e.rhombus--once
+      +e.rhombus--two
+      +e.rhombus--three
+    +e.subtitle.P= blockData.subtitle

@@ -6,6 +6,7 @@ body
 //************************************
 .title-3
   d: flex
+  flex-wrap: wrap
   ai: center
   jc: flex-start
   w: 100%
@@ -29,7 +30,24 @@ body
         fs: 25px
       &--color
         color: var(--theme-primary-green)
-  
+    &subtitle
+      d: block
+      w: 100%
+      mb: 10px
+      fa: center
+      fw:500
+      fs: 10px
+      color: var(--theme-accent-dark-grey)
+      +mq-sm
+        fs: 13px
+        mb: 50px
+      +mq-md
+        fs: 13px
+      +mq-lg
+        fs: 15px
+      +mq-xl
+        fs: 16px
+
 .figure
   pos: relative
   d: flex
@@ -180,6 +198,7 @@ body
   fs: 13px
   ft: uppercase
   tr: 0.5s
+  cursor: pointer
   &:hover
     bg: var(--theme-accent-white)
     color: var(--theme-primary-green)
@@ -213,6 +232,7 @@ body
   fs: 13px
   color: var(--theme-accent-white)
   tr: 0.5s
+  cursor: pointer
   +mq-sm
     top: -33%
   +mq-md
