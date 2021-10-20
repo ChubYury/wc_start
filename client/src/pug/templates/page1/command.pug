@@ -57,29 +57,25 @@ include ../../mixins/index
           telf: '+1 911 (77) 222-1111',
         },
         {
-          unit:'Frank piener', 
+          unit:'Frank Piener', 
           spec: 'Sales Manager',
           email: 'f.piener@unique.com',
           telf: '+1 911 (77) 222-1111',
         },
       ]
 
+-
+  const commandData = {
+          pos: 'left',
+          title:'members',
+          colorTitle:'theam',
+          subtitle: 'We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests',
+        }
+
 +b.w-command
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
     +b.command-b
-      +b.title-3
-        +b.figure--left
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-        +e.text.P #[+e.text--color team] members
-        +b.figure--right
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-      +e.subtitle.P We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests
+      +globalTitle(commandData)
       +b.dev-slider.multiple-items
         +createUnit(useData)
       

@@ -1,21 +1,15 @@
 include ../../mixins/index
-
+-
+  const offerData = {
+          pos: '',
+          title:'WHAT WE',
+          colorTitle:'OFFER',
+          subtitle: 'We offer our customers the best services & solutions, this is our main services list',
+        }
 +b.w-offer
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
     +b.offer-b
-      +b.title-3
-        +b.figure--left
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-        +e.text.P WHAT WE #[+e.text--color OFFER]
-        +b.figure--right
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-      +e.subtitle.P We offer our customers the best services & solutions, this is our main services list
+      +globalTitle(offerData)
       +b.card-1
         +e.icon.icon_desktop.P &#xe00e;
         +e.title.H4 RESPONSIVE & MULTIPURPOSE

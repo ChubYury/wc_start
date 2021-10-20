@@ -28,23 +28,18 @@ include ../../mixins/index
         },
       ]
 
+-
+  const companyfData = {
+          pos: '',
+          title:'company',
+          colorTitle:'facts',
+          subtitle: 'We do love to work and increase our counter numbers, this is what we’ve done till now',
+        }
+
 +b.w-companyf.SECTION
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
     +b.companyf-b
       +b.icon
         +e.pic.icon_toolbox.P &#xe085;
-      +b.title-3
-        +b.figure--left
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-        +e.text.P company #[+e.text--color facts]
-        +b.figure--right
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-      +e.subtitle.P We do love to work and increase our counter numbers, 
-                  | this is what we’ve done till now
+      +globalTitle(companyfData)
       +createFact(fact)

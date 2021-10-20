@@ -26,26 +26,18 @@ include ../../mixins/index
           name: 'advertisement',
         },
       ]
+-
+  const skillData = {
+          pos: '',
+          title:'our powerful',
+          colorTitle:'skills',
+          subtitle: 'With unlimited features that we offer, we promise it’s possible to make everything that was impossible for you !',
+        }
 
 +b.w-skills.SECTION
   +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
     +b.skills-b
       +b.icon
         +e.pic.icon_toolbox.P &#xe085;
-      +b.title-3
-        +b.figure--left
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-        +e.text.P our powerful  #[+e.text--color skills]
-        +b.figure--right
-          +e.line
-          +e.rhombus--once
-          +e.rhombus--two
-          +e.rhombus--three
-      +e.subtitle.P With unlimited features that we offer, 
-                  | we promise it’s possible to make everything 
-                  | that was impossible for you !
-
+      +globalTitle(skillData)
       +createProgress(progData)
